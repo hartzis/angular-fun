@@ -4,7 +4,8 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         options:{
-          soureMap: true
+          soureMap: true,
+          beautify: true
         },
         files: [
           {

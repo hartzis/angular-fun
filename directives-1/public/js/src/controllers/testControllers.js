@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('testControllers', [])
+  var app = angular.module('testControllers', []);
 
   app.controller('testCtrl', ['$scope', 'testService', 
     function ($scope, testService) {

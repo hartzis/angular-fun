@@ -1,17 +1,14 @@
-'use strict'
+'use strict';
 
 (function() {
-  /**
-  * app Module
-  *
-  * Description
-  */
+
   var app = angular.module('directivesOne', [
     'ngResource',
     'ngRoute',
     'testControllers',
-    'testServices'
-    ])
+    'testServices',
+    'userDirectives'
+    ]);
 
   app.config(['$routeProvider', 
     function($routeProvider) {
@@ -24,6 +21,6 @@
           redirectTo: '/'
         });
   }]);
+
 })();
 
-angular.bootstrap(document.body, ['directivesOne']);
